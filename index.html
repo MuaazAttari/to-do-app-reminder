@@ -26,14 +26,18 @@
   <h1>Todo Reminder (Push)</h1>
   <div class="wrapper">
     <form id="todo-form">
-    <input id="todo-input" type="text" placeholder="Write task" autocomplete="off" required>
-    <input id="todo-time" type="datetime-local" required>
-    <button id="add-button">ADD</button>
-</form>
-<ul id="todo-list"></ul>
+      <input id="todo-input" type="text" placeholder="Write task" autocomplete="off" required>
+      <input id="todo-time" type="datetime-local" required>
+      <button id="add-button">ADD</button>
+    </form>
 
-    <div class="note">Allow notifications when browser asks. For background reminders on mobile, open this page once and grant permission. For full background behavior use HTTPS (or ngrok).</div>
     <ul id="todo-list"></ul>
+
+    <div class="note">
+      Allow notifications when browser asks. For background reminders on mobile, open this page once and grant permission. For full background behavior use HTTPS (or ngrok).
+    </div>
   </div>
+  <script src="script.js" defer></script>
 </body>
+
 </html>
