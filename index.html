@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Todo Reminder (Push)</title>
+  <link rel="manifest" href="/manifest.json">
+  <style>
+    /* keep your existing styles; compacted for brevity */
+    :root{--background:#101114;--primary-color:#1C1D20;--secondary-color:#4A4D57;--accent-color:#00FFC4;--text-color:#F9F9F9}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{min-height:100vh;padding:12px;background:var(--background);color:var(--text-color);font-family:Segoe UI, Tahoma, Geneva, Verdana, sans-serif;display:flex;flex-direction:column;align-items:center}
+    h1{margin-top:40px;margin-bottom:18px;color:var(--accent-color);font-weight:800;text-transform:uppercase}
+    .wrapper{width:700px;max-width:100%;display:flex;flex-direction:column;gap:12px}
+    form{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+    #todo-input{flex:1;padding:12px;border-radius:999px;border:2px solid var(--secondary-color);background:transparent;color:var(--text-color)}
+    #todo-time{padding:10px;border-radius:8px;border:1px solid var(--secondary-color);background:transparent;color:var(--text-color)}
+    button{padding:10px 16px;border-radius:10px;border:none;background:var(--accent-color);color:#000;font-weight:700;cursor:pointer}
+    ul{list-style:none;width:100%;display:flex;flex-direction:column;gap:8px}
+    li{background:var(--primary-color);padding:10px;border-radius:12px;display:flex;justify-content:space-between;align-items:center}
+    .meta{font-size:12px;color:var(--secondary-color)}
+    .note{font-size:12px;color:var(--secondary-color)}
+  </style>
+</head>
+<body>
+  <h1>Todo Reminder (Push)</h1>
+  <div class="wrapper">
+    <form id="todo-form">
+    <input id="todo-input" type="text" placeholder="Write task" autocomplete="off" required>
+    <input id="todo-time" type="datetime-local" required>
+    <button id="add-button">ADD</button>
+</form>
+<ul id="todo-list"></ul>
+
+    <div class="note">Allow notifications when browser asks. For background reminders on mobile, open this page once and grant permission. For full background behavior use HTTPS (or ngrok).</div>
+    <ul id="todo-list"></ul>
+  </div>
+</body>
+</html>
