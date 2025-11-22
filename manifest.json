@@ -1,0 +1,21 @@
+{
+  "name": "Todo Reminder",
+  "short_name": "Todo",
+  "description": "Todo app with push notifications and reminders",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#101114",
+  "theme_color": "#00FFC4",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
